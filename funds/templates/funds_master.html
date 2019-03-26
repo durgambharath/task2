@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'plugins/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/css/govt.css' %}">
+
+    <title>Funds_Master</title>
+
+</head>
+
+<body>
+
+        <nav class="navbar navbar-default" id="nav">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <h1> POLIS </h1>
+                        </a>
+                    </div>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Old
+                                    Reports
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Masters
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="bank_master.html"> Bank Master </a></li>
+                                    <li><a href="caste_master.html"> Caste Master </a></li>
+                                    <li><a href="da_master.html"> Da Master </a></li>
+                                    <li><a href="education_master.html"> Education Master </a></li>
+                                    <li><a href="employee_master.html"> Employee Master </a></li>
+                                    <li><a href="fund_master.html"> Fund Master </a></li>
+                                    <li><a href="hra_master.html"> Hra Master </a></li>
+                                    <li><a href="insurance_add_master.html"> Insurance ADD Master </a></li>
+                                    <li><a href="language_master.html"> Language Master </a></li>
+                                    <li><a href="leaves_master.html"> Leaves Master </a></li>
+                                    <li><a href="loan_address_master.html"> Loan Address Master </a></li>
+                                    <li><a href="loans_master.html"> Loans Master </a></li>
+                                    <li><a href="other_deduction_master.html"> Other Deduction Master </a></li>
+                                    <li><a href="punishment_master.html"> Punishment Master </a></li>
+                                    <li><a href="quater_master.html"> Quarter Master </a></li>
+                                    <li><a href="quarter_water_supply_master.html"> Quarter Water Supply Master </a></li>
+                                    <li><a href="rank_master.html"> Rank Master </a></li>
+                                    <li><a href="rewards_master.html"> Rewards Master </a></li>
+                                    <li><a href="scale_master.html"> scale Master </a></li>
+                                    <li><a href="state_master.html"> State Master </a></li>
+                                    <li><a href="subdivision_master.html"> SubDivision Master </a></li>
+                                    <li><a href="ta_master.html"> TA Master </a></li>
+                                    <li><a href="telephone_master.html"> Telephone Master </a></li>
+                                    <li><a href="trainings_master.html"> Trainings Master </a></li>
+                                    <li><a href="treasury_code_master.html"> Treasury Code Master </a></li>
+                                    <li><a href="working_place_master.html"> Working Place Master </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FMS
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BUdget
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+<div class="container">
+
+    <div class="box">
+
+        <h2 class="text-center ptb-20">Funds Master</h2>
+
+
+        <div class="row ptb-10">
+                <div class="col-md-3">
+                    <label> Select Funds </label>
+                </div>
+                <div class="col-md-6">
+                    <select name="" class="form-control" id="select">
+                        <option value=""> Funds </option>
+                        <option value="">Club & Tennis Fund </option>
+                        <option value="">Pay Slip Recovery </option>
+                        <option value=""> SURAKSHA</option>
+                        <option value="">Ministerial Staff Association </option>
+                        <option value="">CORPUS FUND </option>
+                        <option value="">Hospital Fund </option>
+                        <option value=""> CONTRIBUTION FUND </option>
+                        <option value=""> Flag Fund</option>
+                        <option value=""> suraksha sub</option>
+                        <option value=""> FAMILY BENIFIT FUND</option>
+                        <option value="">EWF </option>
+                        <option value=""> Library Fund</option>
+                        <option value=""> Hospital Welfare Fund</option>
+                        <option value=""> Rd Interest</option>
+                        <option value=""> Club Fund</option>
+                        <option value=""> Tennis Fund</option>
+                        <option value=""> APEWF </option>
+                        <option value="">Sports Fund </option>
+
+
+
+
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary add_btn" data-toggle="modal" data-target="#myModal12" id="btn11">
+                        Add  </button>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="row">
+                    <div class="col-md-3">
+                        <button class="btn btn-danger des mtb-20"> Delete </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-primary des mtb-20" data-toggle="modal" data-target="#myModal32"> Edit </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-success des mtb-20"> Save </button>
+                    </div>
+                    <div class="col-md-3">
+                            <button class="btn btn-warning des mtb-20"> Exit </button>
+                        </div>
+                </div> <br>
+                <div class="modal fade" id="myModal12" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Add Funds</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" placeholder="Entry New Fund" class="form-control input_c" />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary add_btn" data-dismiss="modal" id="btn2">Add Fund</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="modal fade" id="myModal32" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Edit Funds</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" placeholder="Edit Your Fund Here" class="form-control input_c" />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary add_btn" data-dismiss="modal" id="btn2">Add Fund</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+    </div>
+
+
+
+
+<script src="{% static 'plugins/js/jquery.min.js' %}"> </script>
+<script src="{% static 'plugins/js/bootstrap.min.js' %}"> </script>
+
+
+
+</body>
+</html>
